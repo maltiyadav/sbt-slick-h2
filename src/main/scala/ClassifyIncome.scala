@@ -11,7 +11,7 @@ object ClassifyIncome extends App {
   val PASS = "IAolGhH1x_71ZhX8JMqbDXcj_k"
   var merchantMap = HashMap(("", ""))
 
-  //STEP 2: Register JDBC driver
+  //STEP 2: Register JDBC com.mtrakr.dao.driver
   Class.forName(JDBC_DRIVER)
   val props = new Properties()
   props.setProperty("user", "xdqwfnfvmonsep")
