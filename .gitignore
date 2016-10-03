@@ -13,8 +13,9 @@ project/boot/
 project/plugins/project/
 
 # IntelliJ Idea Specific
-
-.idea/
+/.idea
+/out
+/.idea_modules
 
 # Scala-IDE specific
 .scala_dependencies
