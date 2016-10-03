@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/classifyIncome.iml" filepath="$PROJECT_DIR$/classifyIncome.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/classifyincome.iml" filepath="$PROJECT_DIR$/.idea/modules/classifyincome.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/classifyincome-build.iml" filepath="$PROJECT_DIR$/.idea/modules/classifyincome-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/classifyincome1.iml" filepath="$PROJECT_DIR$/.idea/modules/classifyincome1.iml" />
     </modules>
   </component>
 </project>
