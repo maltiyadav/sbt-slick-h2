@@ -4,7 +4,7 @@
 		module="classifyincome$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161003131542"
+		publication="20161003132304"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

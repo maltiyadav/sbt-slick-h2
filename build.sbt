@@ -1,4 +1,4 @@
-name := "classifyIncome1"
+name := "classifyIncome"
 
 version := "1.0"
 
