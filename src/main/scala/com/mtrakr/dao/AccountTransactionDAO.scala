@@ -2,10 +2,12 @@ package com.mtrakr.dao
 import java.sql.Timestamp
 import java.util.UUID
 
+import com.google.inject.Singleton
 import com.mtrakr.dao.db.PostgresDBConfigProvider
 import com.mtrakr.dao.driver.DriverComponent
 import com.mtrakr.models.{AccountTransaction, AccountTransactionBase}
-import slick.lifted.TableQuery
+
+import scala.concurrent.Future
 
 
 trait AccountTransactionComponent { self: DriverComponent =>
@@ -67,8 +69,15 @@ trait AccountTransactionComponent { self: DriverComponent =>
   }
 }
 
+@Singleton()
 class AccountTransactionDAO extends AccountTransactionComponent { this: PostgresDBConfigProvider =>
+  import driver.api._
 
   private val accountTransactionQuery = TableQuery[AccountTransactionTable]
+
+  def all: Future[Int] = {
+    val query = accountTransactionQuery.length.result
+    db.run(query)
+  }
 
 }
