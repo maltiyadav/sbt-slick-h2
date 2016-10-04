@@ -67,7 +67,6 @@ trait AccountTransactionComponent { self: DriverComponent =>
   }
 }
 
-@Singleton()
 class AccountTransactionDAO extends AccountTransactionComponent { this: PostgresDBConfigProvider =>
 
   private val accountTransactionQuery = TableQuery[AccountTransactionTable]

@@ -1,3 +1,4 @@
+/*
 import java.sql.DriverManager
 import java.util.Properties
 
@@ -140,4 +141,4 @@ object ClassifyIncome extends App {
       println("id->  "+ id._1 + " Amount->  "+ id._2 + " Date->  "+ id._3 + " Beneficiary->  "+ id._4 + " Mode->  "+ id._5 + "  Type->  "+ id._6 + "  Use->  " + id._7)
     }
   }
-}
+}*/
