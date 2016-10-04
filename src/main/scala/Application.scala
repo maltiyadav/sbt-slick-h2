@@ -1,4 +1,4 @@
-import com.google.inject.{Guice, Inject}
+import com.google.inject.Guice
 import com.mtrakr.dao.AccountTransactionDAO
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -16,6 +16,9 @@ object Application extends App{
 
   val accountTransactionDAO: AccountTransactionDAO = Inject[AccountTransactionDAO]
 
-  println("Get number of records in A/C trans" + accountTransactionDAO.all.map(x => x))
+  accountTransactionDAO.all map{ x =>
+    println("Get number of records in A/C trans" + x.length)
+  }
+
 
 }

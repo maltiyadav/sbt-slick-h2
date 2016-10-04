@@ -70,13 +70,14 @@ trait AccountTransactionComponent { self: DriverComponent =>
 }
 
 @Singleton()
-class AccountTransactionDAO extends AccountTransactionComponent { this: PostgresDBConfigProvider =>
+class AccountTransactionDAO extends AccountTransactionComponent with PostgresDBConfigProvider{
+
   import driver.api._
 
   private val accountTransactionQuery = TableQuery[AccountTransactionTable]
 
-  def all: Future[Int] = {
-    val query = accountTransactionQuery.length.result
+  def all: Future[Seq[AccountTransaction]] = {
+    val query = accountTransactionQuery.sortBy(_.id.asc.nullsFirst).result
     db.run(query)
   }
 

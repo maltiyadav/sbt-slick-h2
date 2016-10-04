@@ -1,10 +1,13 @@
 package com.mtrakr.dao.db
 
+import com.mtrakr.dao.driver.DriverComponent
 import com.typesafe.config.ConfigFactory
-import com.mtrakr.dao.driver.PGDriver
+import slick.driver.PostgresDriver
 
-trait PostgresDBConfigProvider extends DBComponent{
-  this: PGDriver =>
+trait PostgresDBConfigProvider extends DBComponent {
+  self: DriverComponent =>
+
+  val driver = PostgresDriver
 
   import driver.api._
 
