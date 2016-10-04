@@ -1,4 +1,4 @@
-package models
+package com.mtrakr.models
 
 import java.sql.Timestamp
 import java.util.UUID

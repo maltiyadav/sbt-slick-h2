@@ -4,7 +4,7 @@ import java.util.UUID
 
 import com.mtrakr.dao.db.PostgresDBConfigProvider
 import com.mtrakr.dao.driver.DriverComponent
-import models.{AccountTransaction, AccountTransactionBase}
+import com.mtrakr.models.{AccountTransaction, AccountTransactionBase}
 import slick.lifted.TableQuery
 
 
