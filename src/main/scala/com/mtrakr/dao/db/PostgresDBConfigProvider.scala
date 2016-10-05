@@ -15,3 +15,4 @@ trait PostgresDBConfigProvider extends DBComponent {
   val db = Database.forConfig("dev.postgresDbConf", config)
 
 }
+
