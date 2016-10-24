@@ -1,4 +1,4 @@
-name := "sbt-slick-h2"
+name := "classifyIncome"
 
 version := "1.0"
 
