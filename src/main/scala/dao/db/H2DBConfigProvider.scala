@@ -1,6 +1,6 @@
-package com.mtrakr.dao.db
+package dao.db
 
-import com.mtrakr.dao.driver.DriverComponent
+import dao.driver.DriverComponent
 import slick.driver.H2Driver
 
 trait H2DBConfigProvider extends DBComponent {

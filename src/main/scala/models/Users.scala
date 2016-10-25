@@ -1,4 +1,4 @@
-package com.mtrakr.models
+package models
 
 import java.sql.Timestamp
 

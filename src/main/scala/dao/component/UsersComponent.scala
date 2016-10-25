@@ -1,9 +1,9 @@
-package com.mtrakr.dao.component
+package dao.component
 
 import java.sql.Timestamp
 
-import com.mtrakr.dao.driver.DriverComponent
-import com.mtrakr.models.{Users, UsersDetails}
+import dao.driver.DriverComponent
+import models.{Users, UsersDetails}
 
 trait UsersComponent { self: DriverComponent =>
   import driver.api._

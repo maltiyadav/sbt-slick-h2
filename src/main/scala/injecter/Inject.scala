@@ -1,4 +1,4 @@
-package com.mtrakr.injecter
+package injecter
 
 import com.google.inject.Guice
 

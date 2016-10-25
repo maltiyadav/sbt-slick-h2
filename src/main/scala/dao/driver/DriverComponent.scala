@@ -1,4 +1,4 @@
-package com.mtrakr.dao.driver
+package dao.driver
 
 import slick.driver.JdbcProfile
 

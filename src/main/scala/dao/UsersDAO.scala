@@ -1,9 +1,9 @@
-package com.mtrakr.dao
+package dao
 
 import com.google.inject.Singleton
-import com.mtrakr.dao.component.UsersComponent
-import com.mtrakr.dao.db.H2DBConfigProvider
-import com.mtrakr.models.Users
+import models.Users
+import dao.component.UsersComponent
+import dao.db.H2DBConfigProvider
 
 import scala.concurrent.Future
 

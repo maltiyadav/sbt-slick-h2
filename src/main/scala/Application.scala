@@ -1,8 +1,8 @@
 import java.sql.Timestamp
 
-import com.mtrakr.dao.UsersDAO
-import com.mtrakr.injecter.Inject
-import com.mtrakr.models.{Users, UsersDetails}
+import models.{Users, UsersDetails}
+import dao.UsersDAO
+import injecter.Inject
 
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
