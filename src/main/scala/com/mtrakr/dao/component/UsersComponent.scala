@@ -16,7 +16,7 @@ trait UsersComponent { self: DriverComponent =>
 
     def email = column[String]("email")
 
-    def createdTime = column[Timestamp]("created_time")
+    def createdTime = column[Timestamp]("created_ts")
 
     def lastUpdatedTime = column[Option[Timestamp]]("last_updated_time")
 

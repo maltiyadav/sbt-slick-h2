@@ -14,7 +14,6 @@ case class UsersDetails(
                          lastUpdatedTime: Option[Timestamp],
                          enabled: Boolean,
                          phoneNum: Option[Long],
-                         dob: Option[Timestamp]
-                       )
+                         dob: Option[Timestamp])
 
 
